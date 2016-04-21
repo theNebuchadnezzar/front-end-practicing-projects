@@ -1,0 +1,299 @@
+@charset "utf-8"
+/*主结构css样式 pagewarp*/
+@media only screen and (max-width: 640px){
+    #pagewarp{
+        width: device-width;
+        margin: 0 auto;
+    }
+    #footer{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+    background-image: linear-gradient(to top,#dddcdc,#fefefe);
+    margin: 0 auto;
+    text-align: center;
+}
+}
+body {
+    background: #f5f5f5;
+    font-family: "Microsoft Yahei";
+}
+#pagewarp {
+    width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#content{
+    width: 90%;
+    padding: 0 0 11% 0;    
+    margin: 0 auto;
+
+}
+
+#footer{
+    width: 720px;
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+    background-image: linear-gradient(to top,#dddcdc,#fefefe);
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*头部样式 header*/
+#header nav{
+    height: 10%;
+    background-image: linear-gradient(to top,#dddcdc,#fefefe);
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #cccccc;
+}
+.searchBox{
+    display: inline-block;
+    height: 5%;
+    width: 100%;
+    text-align: right;
+    vertical-align: middle;
+    background: #ffffff;
+}
+.searchBox select{
+    font-size: 1.4em;
+    margin: 0;
+    padding: 6px;
+    border:1px solid #cccccc;
+}
+.searchBox input{
+    display: inline-block;
+    border-style: none;
+    margin: 5px;
+    padding: 6px;
+    font-size: 1.4em;
+    border-radius: 4px;
+    color: #fff;
+    
+}
+.searchBox submitButton{
+    background: #bbbbbb;
+}
+
+/*正文样式 content*/
+#content .contentClassTitle{
+    display: block;
+    width:100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: #999999;
+    height: 8%;
+    float: left;
+    font-size: 0.8em;
+    border-bottom: 1px dashed #d6d6d6;
+
+ }
+ #content .contentClassTitle .contentTitle{
+     color: #333333;
+     width: 300px;
+     font-style: bold;
+     font-size: 1.6em;
+ }
+ 
+#content .introductionImage{
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+#introductionBackground{
+    width: 100%;
+    height: 205px;
+    background-image:url(/images/introduction.png) ; 
+
+ }
+
+#introductionContent{
+    width: 100%；
+    height:50px;
+    background-color:rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2em;
+    margin-top: -40px;
+}
+ 
+ 
+ .companyLoan,
+ .studentLoan{
+    text-align: center;
+ }
+
+
+#applyButton{
+    width: 60%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #c5b672;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px 10px;
+    color: #fdf9f9;
+
+ }
+#applyButton a{
+    width: 100%;
+    text-decoration: none;
+    color: #fdf9f9;
+    padding: 5px 40%;
+    font-size: 1.2em;
+}
+
+ /*
+     .contentItemTittle {
+        display: inline-block;
+        width:1000px;
+        margin:15px auto;
+    }
+   
+    .contentItemTittle h2{
+        width:124px;
+        height:31px;
+        background-image: url(images/itemTittle.png);
+        background-repeat: no-repeat;
+        font-weight: normal;
+        font-size: 15px;
+        color: #fff;
+        margin: 0 0 0 -7px;
+        padding: 3px 0 0 20px;
+        float: left;
+        }
+    .contentItemTittle p{
+        width: 50%;
+        float: left;
+        text-align: center;
+        margin: -5px 0 20px 150px;
+    }
+     .contentItemTittle a{
+        float: right;
+        width: 15%;
+        color: #818181;
+        font-size: 13px;
+        text-align: right;
+        margin: 0 10px;
+    }*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+#content .itemTitle{
+     display: inline-block;
+     width: 100%;
+     margin: 0 auto;
+     height: 5%;
+     border:  dashed #d6d6d6;
+     border-width: 1px 0 0;
+     padding-top: 20px;
+ }
+ #content .introduction .introductionItemTitle{
+    border:0 solid #d6d6d6;
+ }
+#content .itemTitle span{
+     float: left;
+     color: #fff;
+     font-size: 1.4em;
+     width: 15%;
+     height: 100%;
+     text-align: center;
+     vertical-align: middle;
+     padding: 5px 0;
+     border-radius: 8%;
+ }
+ #content .itemTitle .studentItemTitle{
+         background: #79c91b;
+
+ }
+ #content .itemTitle .companyItemTitle{
+         background: #2ca1f3;
+
+ }
+ #content .itemTitle a{
+    float: right;
+    text-decoration:none;
+    color: #666666;
+ }
+ 
+ .loanInstruction{
+     border: 1px solid #999999;
+     width: 100%;
+     text-align: center;
+     margin: 0 auto;
+     border-collapse:collapse;
+     background-color: #fff;
+ }
+
+ .loanInstruction tr td{
+    border-right: 1px solid #999999;
+ }
+.loanInstruction tr th{
+    border-right: 1px solid #999999;
+ }
+.loanInstruction .itemDetailTitle{
+    color: #666666;
+    font-size: 1.3em;
+
+}
+.loanInstruction .itemDetailTitle th{
+    padding: 20px;
+    font-weight: normal;
+
+}
+.loanInstruction .line2{
+    border-top: 1px solid #999999;
+}
+.loanInstruction .itemDetail{
+    color: #ff0101;
+    font-size: 1.3em;
+}
+
+.loanInstruction .itemDetailInstruction{
+    color: #919191;
+    font-size: 0.9em;
+}
+.loanInstruction .itemDetailInstruction td{
+    width: 30%;
+    padding: 10px;
+}
+/*尾部样式 footer*/
+.footerIcon{
+    width: 95%;
+    opacity: 1;
+    border:solid #aaaaaa;
+    border-width: 1px 0 0;
+    margin: 0 auto;
+
+}
+.footerIcon li{
+    height:10%;
+    float: left;
+    list-style-type: none;
+
+    vertical-align: middle;
+    text-align: center;
+    margin: 8px auto;
+    padding: 0 12%;
+}
+.footerIcon li a{
+    color: #666666;
+    text-decoration: none;
+}
+/*动态响应布局*/

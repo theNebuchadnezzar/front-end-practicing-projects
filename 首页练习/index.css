@@ -1,0 +1,514 @@
+
+*{
+    font-family: "Microsoft Yahei";
+}
+
+html,body,ul,li,dl,dd,dt,ol{padding:0;margin:0;}
+
+a:link,a:visited,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+/*  顶部 导航  topNav */
+.top{
+	height: 40px;
+	line-height:40px;
+	background: gray;
+}
+.topContext{width:1000px;margin:0 auto;}
+.topLeft{
+    margin-left: 0;
+	float: left;
+}
+.topRight{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden; 
+    float:right; 
+    margin-right:40px;
+}
+.topRight li{
+    float: right;
+}
+.topRight a{
+display:block;
+width:40px;
+font-weight:bold;
+color:#FFFFFF;
+text-align:center;
+}
+
+
+
+/*   头部导航 Navigator   */
+.nav{
+    height: 110px;
+    background: #f0f4f7;
+    line-height: 110px;
+}
+.navContext{
+    width:1000px;
+    margin:0 auto 0;
+    }
+.logo {
+   /* display: table;*/
+    height:110px;
+    float: left;
+    }
+.logo img{
+  /*  display: table-cell;
+    vertical-align: middle;*/
+    top: 50%;
+    margin-top: 30px;
+}
+
+.active {
+    display: block;
+    list-style-type:none;
+    float:right;
+    text-align: center;
+}
+
+.active > li{
+    display:inline-block;
+    padding:5px 15px;
+    margin:0 10px;
+    color:#4c4c4c;
+    height: 35px;
+    line-height: 35px;
+    width:80px;
+    text-align: center;
+   /* border: 1px solid black;*/
+   position: relative;
+}
+.active > li > a{
+    color:#4c4c4c;
+}
+.active > li:hover {
+    background:#37a8ec;
+    color:#fff;   
+}
+.active > li:hover > a{
+    color:#fff;
+    
+}
+.active > li > ul > li:hover {
+    display: block;
+    background: lightgrey;
+    color: #4c4c4c;
+    cursor: pointer;
+    border-bottom:1px #4c4c4c;
+    
+}
+.active>li>ul{
+    display: none;    
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left:0px;
+    border:solid;
+    border-width: 4px 2px 2px;
+    border-color:#37a8ec #cccccc #cccccc;
+    
+}
+.active>li:hover ul{
+    display: block;
+    padding: 0;
+    margin: 0;
+    border:solid;
+    border-width: 4px 2px 2px;
+    border-color:#37a8ec #cccccc #cccccc;
+}
+
+.active > li > ul > li {
+    display: block;
+    color: #4c4c4c;
+    background: white;
+   /* border: 1px solid black;*/
+    width:120px;
+    text-align: center; 
+    list-style: none; 
+
+
+}
+.active > li > ul > li a{
+    display: block;
+    color: #4c4c4c;
+}
+
+/*  banner   */
+
+
+
+    .content{
+        background: #f0f4f7;
+    }
+    
+    .content_con{width:1000px;margin:0 auto;}
+    
+    .contentItemTittle {
+        display: inline-block;
+        width:1000px;
+        margin:15px auto;
+    }
+   
+    .contentItemTittle h2{
+        width:124px;
+        height:31px;
+        background-image: url(images/itemTittle.png);
+        background-repeat: no-repeat;
+        font-weight: normal;
+        font-size: 15px;
+        color: #fff;
+        margin: 0 0 0 -7px;
+        padding: 3px 0 0 20px;
+        float: left;
+        }
+    .contentItemTittle p{
+        width: 50%;
+        float: left;
+        text-align: center;
+        margin: -5px 0 20px 150px;
+    }
+     .contentItemTittle a{
+        float: right;
+        width: 15%;
+        color: #818181;
+        font-size: 13px;
+        text-align: right;
+        margin: 0 10px;
+    }
+    .contentItemTittle a:hover{
+        color:#666;
+        text-decoration:underline;
+        cursor: pointer;
+    }
+    
+    /*   内容区块设置   */
+    .investRank{
+        width:610px;
+        float:left;
+        margin: 20px 24px 65px 0;
+        }
+    .investInfo{
+        width: 360px;
+        float: right;
+        margin: 20px 0 65px 0;
+    }
+    
+    .investList{
+        width: 100%;
+        clear: both;
+    }
+    .investNews{
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    
+    .test{width:300px;height:100px;background:#eee;}
+    
+    .contentItem{
+    background:#fff;
+    border:1px solid #d1d1d1;
+    }
+/*   投资排行 investRank   */
+.investRank{
+    height: 290px;
+}
+#investRankTab{
+    width: 90%;
+    float: left;
+}
+#tabHead {
+    display: block;
+    list-style-type: none;
+    padding: 10px 0 0;
+    font-size: 1.3em;
+    background: #f3f3f3;
+
+ 
+}
+
+#tabHead a{
+    cursor: pointer;
+    margin: 5px 0 0;
+    padding: 5px 10px 0;
+    vertical-align: middle;
+    bottom: 5px;
+    color: #666666;
+
+    background: #f3f3f3;
+
+}
+
+#investRankTab .focus{
+    color: #333333;
+
+    background: #fff;
+}
+
+
+
+#tabContent
+{
+    display: none;
+}
+    /*tab 组件*/
+    /*
+#investRankTab{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+.tabHead{
+        font-weight: normal;
+        padding: 5px;
+		height: 32px;
+		line-height: 32px;
+	    text-align: center;
+        top:-20px;
+        left: 20px;
+		width: 70px;
+		position: absolute;
+	    cursor: pointer;
+        background: #f3f3f3;
+    }
+.tabContent {
+		padding: 10px 20px;
+		position: absolute;
+		left: 0;
+        top:40px;
+		height: 200px;
+		width: 100%;
+        font-size: 15px;
+	}
+    #tabDay .tabHead {
+		z-index: 3;
+	}
+	#tabWeek .tabHead {
+		left: 75px;
+		z-index: 1;
+	}					 
+	#tabMounth .tabHead {
+		left: 150px;
+		z-index: 1;
+	}				 
+	#tabDay .tabContent {
+		z-index: 2;
+	}
+    
+    #tabDay:hover h3,
+	#tabDay:focus h3,
+	#tabDay:active h3,
+	#tabWeek:hover h3,
+	#tabWeek:focus h3,
+	#tabWeek:active h3,
+	#tabMounth:hover h3,
+	#tabMounth:focus h3,
+	#tabMounth:active h3 {
+		z-index: 4;
+		font-weight: bold;
+	}
+	#tabDay:hover .tabContent,
+	#tabDay:focus .tabContent,
+	#tabDay:active .tabContent,
+	#tabWeek:hover .tabContent,
+	#tabWeek:focus .tabContent,
+	#tabWeek:active .tabContent,
+	#tabMounth:hover .tabContent,
+	#tabMounth:focus .tabContent,
+	#tabMounth:active .tabContent {            
+		 z-index: 3;
+	}
+
+    .tabContent>.tableCol>.tabCellContent{
+    display: block;    
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left:0px;
+    }
+
+    */
+
+/*   投资信息 investInfo   */
+.investInfo{
+    height: 290px;
+}
+.investInfo table{
+    height: 80%;
+    width: 80%;
+    line-height: 30px;
+    margin:-20px auto;
+}
+.investInfo table td,
+.investInfo table tr{
+    text-align: center;
+    vertical-align: middle;
+}
+.investInfo table col.infoImages{
+    vertical-align: middle;
+    text-align: center;
+}
+.infoContent{
+    font-size: 15px;
+    color: #666;
+}
+.infoNumber{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #349cdb;
+}
+/*   投资列表 investList   */
+.investListTable{
+    height: 80%;
+    width: 90%;
+    line-height: 60px;
+    margin:-20px auto 0;
+    border: solid #ccc;
+    border-width: 0 0 1px 0;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.investListTableTittle{
+    background: #f3f3f3;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    margin: 0;
+}
+
+.investListIcons {
+    margin: 0 3px;
+    vertical-align: middle;
+}
+.investListTable .progressBar{
+    width: 90px;
+    height: 12px;
+    border: 1px solid #cccccc;
+    margin: auto;
+    position: relative;
+}
+.investListTable .progressBar .progressBarColor{
+    position:relative;
+    background:#37a8ec;
+    color:#333;
+    height:12px;
+    line-height:12px;
+    left:0;
+    top:0;
+}
+.investListTable .progressBar .progressBarText{
+    line-height:11px;
+    font-size:12px;
+    left:0;
+    position:absolute;
+    text-align:center;
+    width:100px;
+}
+
+.investListTail{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    padding: 20px auto;
+    clear: both;
+}
+/*   新闻公告 investNews   */
+.investNews .newsTime{
+    float: right;
+    font-size: 15px;
+    color: #666;
+    line-height: 25px;
+    padding-right: 10px;
+}
+
+.investNews ul{
+    margin: 0 0 0 40px;
+    list-style-type: circle;
+    color: #45aeed;
+}
+
+.investNews li{
+    border: solid #ccc;
+    border-width: 0 0 1px 0;
+    padding: 10px 10px 5px;
+}
+
+.investNews li a{
+    color: #666;
+    cursor: pointer;
+}
+
+
+
+
+/*尾部信息栏  footer*/
+
+.footer{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px auto;
+    margin: 40px auto;
+}
+
+.footer .friendsLink{
+    width: 70%;
+    float: left;
+}
+.footer .footerTittle{
+    color: #666666;
+    font-size: 18px;
+    float: left;
+    margin:0 20px 20px;
+}
+.footer li{
+    float: left;
+    width: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+.footer li a{
+    display: block;
+    color: #666;
+    text-align: center;
+    margin: 5px 3px;
+}
+.footer .customerService{
+    width: 70%;
+    float: left;
+}
+.footer .customerService li{
+    width: 150px;
+    
+}
+.footer .customerTels{
+    width: 30%;
+    float: right;
+}
+.footer .customerTels img{
+    float: left;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.footer .customerTels .telDetail{
+    margin: 0 50px 0 0;
+    padding:10px;
+}
+
+.footer ul{
+    list-style-type: none;
+    
+}
+
+
+
+
