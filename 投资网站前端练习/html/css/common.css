@@ -1,0 +1,194 @@
+/*总体*/
+.pageWarp{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#topper{
+	width: 100%;
+	background: #3a3a3a;
+	margin: 0;
+	padding: 5px;
+	height: 25px;
+}
+#nav{
+	width: 100%;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	height: 90px;
+}
+#bottomContent{
+	width: 100%;
+	background: #515152;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+#friendLink{
+	width: 100%;
+	height: 30px;
+	background: #414242;
+	margin: -5px 0 0;
+	padding: 5px 0;
+
+}
+/*头部*/
+#topper .topperLeft{
+	color: #fff;
+	vertical-align: middle;
+	line-height: 25px;
+	padding: 1px 0;
+	float: left;
+}
+#topper .topperLeft img{
+	margin: 0px 10px 0;
+}
+#topper .topperRight{
+	float: right;
+	line-height: 25px;
+	padding: 1px 0;
+	vertical-align: middle;
+
+
+}
+#topper .topperRight ul{
+	list-style: none;
+	text-decoration: none;
+	margin-top: 0;
+	color: #fff;
+}
+#topper .topperRight li{
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	margin: 0 5px;
+}
+#topper .topperRight a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*导航*/
+
+#nav .navContent .logo{
+	padding: 10px 0;
+	float: left;
+	margin-bottom: 10px;
+
+}
+#nav .navContent .logo img{
+	float: left;
+}
+#nav .navContent .logoContent{
+	float: left;
+	list-style: none;
+	margin-left: -30px;
+}
+#nav .navContent .logoContent li{
+	float: left;
+	vertical-align: middle;
+	list-style: none;
+}
+#nav .navContent .logoContent .logoTitle{
+	font-size: 35px;
+	color: #3f3f3f;
+
+}
+#nav .navContent .logoContent .slogon{
+	font-size: 15px;
+	color: #575757;
+	padding-top: 5px;
+}
+
+
+#nav .navContent .navDetail{
+	float: right;
+	vertical-align: middle;
+	margin-top: 25px;
+}
+#nav .navContent .navDetail a{
+	text-decoration: none;
+	color: #414141;
+
+}
+#nav .navContent .navDetail ul li{
+	float: left;
+	list-style-type: none;
+	margin: 0 20px;
+	color: #414141;
+	font-size: 20px;
+}
+
+/*底部内容*/
+#bottomContent .bottomContentLeft{
+	width: 60%;
+	float: left;	
+}
+#bottomContent .bottomContentLeft .aboutUs{
+	text-decoration: none;
+	list-style-type: none;
+	margin: 20px 0;
+	clear: both;
+}
+#bottomContent .bottomContentLeft .aboutUs li{
+	float: left;
+	margin: 5px;
+	color: #dbdbdb;
+
+}
+#bottomContent .bottomContentLeft .aboutUs li a{
+	text-decoration: none;
+	color: #dbdbdb;
+}
+
+#bottomContent .bottomContentLeft .backUpInfo{
+	text-decoration: none;
+	list-style-type: none;
+	clear: both;
+	margin: 20px 0;
+}
+#bottomContent .bottomContentLeft .backUpInfo li{
+	float: left;
+	color: #a7a7a7;
+	margin: 5px 0;
+	font-size: 12px;
+	vertical-align: middle;	
+}
+
+#bottomContent .bottomContentLeft .bottomLogo{
+	clear: both;
+}
+#bottomContent .bottomContentLeft .bottomLogo li{
+	list-style-type: none;
+	float: left;
+	margin: 5px 15px 0 0;
+}
+
+#bottomContent .bottomContentRight{
+	float: right;
+	width: 40%;
+}
+
+#bottomContent .bottomContentRight table{
+	margin-top: 20px;
+	float: right;
+	color: #dadada;
+}
+
+#bottomContent .bottomContentRight table td{
+	padding:0 0 0 15px;
+}
+
+
+#friendLink  li{
+	float: left;
+	list-style-type: none;
+	padding: 5px 10px 5px 0;
+	color: #a7a7a7;
+}
+
+#friendLink li a{
+	text-decoration: none;
+	color: #858484;
+}
