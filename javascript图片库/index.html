@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Javascript图片库</title>
+	<link rel="stylesheet" href="styles/common.css">
 </head>
 <body>
 	<h1>NBA队标</h1>
@@ -14,17 +15,19 @@
 			<a href="images/2.jpg" title="Milwaukee Bucks" onclick="showPic(this); return false;">Bucks</a>
 		</li>
 		<li>
-			<a href="images/3.jpg" title="Utah Jazz" onclick="showPic(this); return false;" onclick="showPic(this);return false;" onclick="showPic(this);return false;">Jazz</a>
+			<a href="images/3.jpg" title="Utah Jazz" onclick="showPic(this); return false;">Jazz</a>
 		</li>
 		<li>
-			<a href="images/4.jpg" title="Sacramento Kings" onclick="showPic(this); return false;" onclick="showPic(this);return false;">Kings</a>
+			<a href="images/4.jpg" title="Sacramento Kings" onclick="showPic(this); return false;">Kings</a>
 		</li>
 		<li>
 			<a href="images/5.jpg" title="Los Angeles Clippers" onclick="showPic(this); return false;">Clippers</a>
 		</li>
 	</ul>
 	<img id="placeholder" src="images/placeholder.png" alt="NBA teams"/>
-		<script type="text/javascript" src="showPic.js"></script>
+		
+	<p id="description">Choose an image.</p>
 
+	<script type="text/javascript" src="scripts/showPic.js"></script>
 </body>
 </html>

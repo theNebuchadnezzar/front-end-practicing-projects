@@ -1,0 +1,16 @@
+body{
+	font-family: "Microsoft yahei";
+	background: #ccc;
+	margin: 1em 10%;
+	
+}
+
+ul li{
+	float: left;
+	list-style-type: none;
+	margin: 1em;
+}
+
+img{
+	clear: both;
+}
