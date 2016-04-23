@@ -22,12 +22,22 @@ function showPic(whichpic) {
 	placeholder.setAttribute("src",source);
 
 	//将description元素变为可选的
-	if (document.getElementById("description")) {		
+	/if (document.getElementById("description")) {		
 		var	picTitle = whichpic.getAttribute("title")?whichpic.getAttribute("title"):"";
 		var	description = document.getElementById("description");
 		if (description.firstChild.nodeType == 3) {
 		description.firstChild.nodeValue = picTitle;
 		}
+	}/
+	if (!document.getElementById("description")) return false;
+	if (whichpic.getAttribute("title")) {
+	  var text = whichpic.getAttribute("title");
+	} else {
+	  var text = "";
+	}
+	var description = document.getElementById("description");
+	if (description.firstChild.nodeType == 3) {
+	  description.firstChild.nodeValue = text;
 	}
 	return false;
 }
