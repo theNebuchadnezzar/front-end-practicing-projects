@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>ajax</title>
+	<script>
+		function loadXMLDoc() {
+		var xmlhttp;
+		if (window.XMLHttpRequest){
+			xmlhttp = new XMLHttpRequest();
+		}else{
+			xmlhttp = new ActiveObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadstatechange=function () {
+			if (xmlhttp.readystate ==4 && xmlhttp.status == 200) {
+				document.getElementById('mydiv').innerHTML = xmlhttp.responseText;
+			}
+		}
+		xmlhttp.open("GET","/ajax/test.txt",true);
+		xmlhttp.send();
+		}
+	</script>
+</head>
+<body>
+<div id="mydiv">点击按钮显示内容</div>
+<button type="button" onclick="loadXMLDoc()">修改内容</button>
+</body>
+</html>
