@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title>json</title>
+</head>
+<body>
+	<p>
+		NAME: <span id="jname"></span>
+		AGE: <span id="jage"></span>
+		SCHOOL: <span id="jschool"></span>
+		ADDRESS: <span id="jaddress"></span>
+
+	</p>
+
+<script>
+	var JSONObject{
+		"name":"xiaoming",
+		"age":"12",
+		"school":"the first middle school",
+		"address":"changan street"
+	};
+	document.getElementById('jname').innerHTML = JSONObject.name;
+	document.getElementById('jage').innerHTML = JSONObject.age;
+	document.getElementById('jschool').innerHTML = JSONObject.school;
+	document.getElementById('jaddress').innerHTML = JSONObject.address;
+</script>
+</body>
+</html>
+
