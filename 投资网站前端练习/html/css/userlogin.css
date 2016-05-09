@@ -1,0 +1,63 @@
+@import url(base.css);
+@import url(common.css);
+#contenter{
+	background: #f3f3f3;
+	width: 100%;
+}
+#contenter .transPart{
+	width: 100%;
+	background: linear-gradient(#d9d9d9,#f3f3f3);
+	height: 12px;
+}
+#contenter .mainContent{
+	border:1px solid #dddee2;
+}
+#contenter .mainContent .title{
+	background: #f7f7f7;
+	padding: 15px 0;
+}
+
+#contenter .mainContent .title span{
+	margin-left:30px;
+
+}
+
+#contenter .mainContent .content{
+	background: #ffffff;
+	padding: 70px 50px;
+	height: 430px;
+	display: flex;
+}
+
+#contenter .mainContent .content .login{
+	display: flex;
+}
+#contenter .mainContent .content .login ul{
+	list-style-type: none;
+
+}
+#contenter .mainContent .content .login ul li{
+	justify-content: flex-end;
+	margin:15px 0;
+
+}
+#contenter .mainContent .content .login ul li input{
+}
+#username input{
+	width: 274px;
+	height: 38px;
+
+}
+#password input{
+	width: 274px;
+	height: 38px;
+
+}
+#submit input{
+	width: 274px;
+	height: 38px;
+
+}
+#contenter .mainContent .content .loginImagesList{
+	float: right; 
+}

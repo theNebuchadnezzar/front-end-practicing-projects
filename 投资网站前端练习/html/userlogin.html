@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>HEAD&TAIL</title>
+	<title>用户登录</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/userlogin.css">
 </head>
 <body>
 <header>
@@ -47,8 +46,26 @@
 </header>
 
 
-
-
+<div id="contenter" >
+	<div class="transPart"></div>
+	<div class="mainContent pageWarp">
+		<div class="title"><span>帐户登录</span></div>
+		<div class="content">
+			<div class="login">
+				<ul>
+					<li id="username"><lable>用户名：</lable><input id="username" type="tel" name="username" placeholder="请输入手机号码" pattern="[0-9]{11}"></li>
+					<li id="password"><lable>密码：</lable><input type="password" name="password" placeholder="请输入密码" pattern=""></li>
+					<li id="rememberMe" ><input type="checkbox" name="rememberMe" value=""><lable>记住我</lable><a id="fogetPassword" href="">忘记登陆密码</a></li>
+					<li id="submit"><input  type="submit" value="登录"></li>
+					<li id="freeSignup"><a  href="userSignup.html">免费注册</a></li>
+				</ul>
+			</div>
+			<div class="loginImagesList">
+				<img src="images/userlogin/lunbo01.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <footer>
